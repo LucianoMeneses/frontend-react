@@ -1,14 +1,33 @@
+import './styles.css';
+import '@popperjs/core';
+import 'bootstrap/js/src/collapse';
+
 const Navbar = () => {
   return (
-    <nav className="bg-primary text-white">
-      <div>
-        <a href="link">
+    <nav className="navbar navbar-expand-md navbar-dark bg-primary main-nav">
+      <div className="container-fluid">
+        <a href="link" className="nav-logo-text">
           <h4>EQrcode</h4>
         </a>
-        <div>
-          <ul>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav offset-md-2 main-menu">
             <li>
-              <a href="link">HOME</a>
+              <a href="link" className="active">
+                HOME
+              </a>
             </li>
             <li>
               <a href="link">CATALOGO</a>
