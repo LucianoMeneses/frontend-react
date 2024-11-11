@@ -1,9 +1,13 @@
 import './assets/custom.scss';
 import './App.css';
-import Home from 'pages/Home';
+import Rotas from './Rotas'
 
 function App() {
-  return <Home />;
+  return (
+    <>
+     <Rotas/>
+    </>
+  );
 }
 
 export default App;
